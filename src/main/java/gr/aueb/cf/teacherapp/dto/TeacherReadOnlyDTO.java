@@ -17,8 +17,8 @@ public class TeacherReadOnlyDTO {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private String uuid;
-    private String firstName;
-    private String lastName;
+    private String firstname;
+    private String lastname;
     private String vat;
     private String region;
 }
