@@ -10,15 +10,15 @@ public class Mapper {
 
     public Teacher mapToTeacherEntity(TeacherInsertDTO teacherInsertDTO) {
         Teacher teacher = new Teacher();
-        teacher.setFirstName(teacherInsertDTO.getFirstname());
-        teacher.setLastName(teacherInsertDTO.getLastname());
+        teacher.setFirstname(teacherInsertDTO.getFirstname());
+        teacher.setLastname(teacherInsertDTO.getLastname());
         teacher.setVat(teacherInsertDTO.getVat());
         return teacher;
     }
 
     public TeacherReadOnlyDTO mapToTeacherReadOnlyDTO(Teacher teacher) {
         return new TeacherReadOnlyDTO(teacher.getId(), teacher.getCreatedAt(),
-                teacher.getUpdatedAt(), teacher.getUuid(), teacher.getFirstName(),
-                teacher.getLastName(), teacher.getVat(), teacher.getRegion().getName());
+                teacher.getUpdatedAt(), teacher.getUuid(), teacher.getFirstname(),
+                teacher.getLastname(), teacher.getVat(), teacher.getRegion().getName());
     }
 }
