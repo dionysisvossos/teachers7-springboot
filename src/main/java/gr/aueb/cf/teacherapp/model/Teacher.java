@@ -37,5 +37,4 @@ public class Teacher extends AbstractEntity {
     public void initiateUuid() {
         if (uuid == null)  uuid = UUID.randomUUID().toString();
     }
-
 }
